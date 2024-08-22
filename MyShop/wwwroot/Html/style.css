@@ -1,0 +1,131 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* font-size: 20px; */
+}
+
+div.so_postxx1{
+  margin: 10px 0;
+
+}
+
+div.Formmz1{
+  /* margin: 0 44vw; */
+  width: 100%;
+ 
+
+}
+
+div.row{
+  margin: 0 auto;
+}
+
+#buttclos1{
+margin-top: 10px;
+margin-right: 15px;
+background-color: red;
+padding: 5px 10px;
+float: right;
+}
+
+form.ttss1 {
+  background-color: #fefefd;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  margin: 100px auto;
+  border-radius: 15px;
+  /* padding: 50px; */
+  /* background-image: linear-gradient(to right top,
+  #7bb2fb, #69a6fb, #579afa, #468ef9, #3481f7); */
+  background-color: #ffffff;
+  direction: ltr;
+
+}
+
+h4.Th4MF {
+  padding-top: 35px;
+
+}
+
+.Ta11 {
+  display: block;
+  text-decoration: none;
+  /* margin: 10px; */
+  font-size: 13px;
+}
+
+.a1 {
+  margin-top: 10px;
+  color: #70706f;
+}
+
+a.a2 {
+  color: #397de8;
+}
+
+input[type="email"],
+input[type="password"] {
+  display: block;
+  /* text-align: center; */
+  margin: 10px auto;
+  /* padding-top: 4px; */
+}
+
+
+
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #3775da;
+  /* padding: 0px 10px; */
+  width: 240px;
+  /* box-sizing: border-box; */
+  /* margin: 20px; */
+  outline: none;
+}
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+
+  border: none;
+  border-bottom: 2.5px solid #3775da;
+
+}
+
+input[type="submit"] {
+  /* width: 230px; */
+  padding: 8px 100px;
+  border: none;
+  color: white;
+
+  background-image: linear-gradient(to right, #98c4ff, #7fb4fe, #67a3fd, #4e92fa, #3481f7);
+}
+
+
+input[type="submit"]:hover {
+
+  background-image: linear-gradient(to left, #98c4ff, #7fb4fe, #67a3fd, #4e92fa, #3481f7);
+
+}
+
+
+/*-----------------------------------------------------------*/
+
+
+li:hover,button:hover,a:hover{
+    
+  background-color: #009fe1 !important;
+  color: #ffffff !important;
+ 
+  border-radius: 5px;
+}
+/*-----------------------------------------------------------*/
+a.a2:hover{
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}

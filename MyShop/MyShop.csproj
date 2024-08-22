@@ -1,0 +1,88 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>True</Optimize>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <Optimize>False</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\PopUpLogin\RTLbootstrap\**" />
+    <Content Remove="wwwroot\PopUpLogin\RTLbootstrap\**" />
+    <EmbeddedResource Remove="wwwroot\PopUpLogin\RTLbootstrap\**" />
+    <None Remove="wwwroot\PopUpLogin\RTLbootstrap\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20240306160413_SeedDaaCategoryMig.cs" />
+    <Compile Remove="Migrations\20240306160413_SeedDaaCategoryMig.Designer.cs" />
+    <Compile Remove="Migrations\20240307134358_s1_Mig.cs" />
+    <Compile Remove="Migrations\20240307134358_s1_Mig.Designer.cs" />
+    <Compile Remove="Migrations\20240307172940_soh2_Mig.cs" />
+    <Compile Remove="Migrations\20240307172940_soh2_Mig.Designer.cs" />
+    <Compile Remove="Migrations\20240307173247_soh3_Mig.cs" />
+    <Compile Remove="Migrations\20240307173247_soh3_Mig.Designer.cs" />
+    <Compile Remove="Migrations\20240307173312_soh4_Mig.cs" />
+    <Compile Remove="Migrations\20240307173312_soh4_Mig.Designer.cs" />
+    <Compile Remove="Migrations\20240307173717_soh5_Mig.cs" />
+    <Compile Remove="Migrations\20240307173717_soh5_Mig.Designer.cs" />
+    <Compile Remove="Migrations\20240307174105_s2_Mig.cs" />
+    <Compile Remove="Migrations\20240307174105_s2_Mig.Designer.cs" />
+    <Compile Remove="Migrations\20240307180753_s3_Mig.cs" />
+    <Compile Remove="Migrations\20240307180753_s3_Mig.Designer.cs" />
+    <Compile Remove="Migrations\20240307181223_s2_Mig.cs" />
+    <Compile Remove="Migrations\20240307181223_s2_Mig.Designer.cs" />
+    <Compile Remove="Migrations\20240307181409_s2_Mig.cs" />
+    <Compile Remove="Migrations\20240307181409_s2_Mig.Designer.cs" />
+    <Compile Remove="Migrations\20240307181741_s2_Mig.cs" />
+    <Compile Remove="Migrations\20240307181741_s2_Mig.Designer.cs" />
+    <Compile Remove="Migrations\20240307182549_s3_Mig.cs" />
+    <Compile Remove="Migrations\20240307182549_s3_Mig.Designer.cs" />
+    <Compile Remove="Migrations\20240307182644_s3_Mig.cs" />
+    <Compile Remove="Migrations\20240307182644_s3_Mig.Designer.cs" />
+    <Compile Remove="Migrations\20240307183159_s3_Mig.cs" />
+    <Compile Remove="Migrations\20240307183159_s3_Mig.Designer.cs" />
+    <Compile Remove="Migrations\20240307183330_s4_Mig.cs" />
+    <Compile Remove="Migrations\20240307183330_s4_Mig.Designer.cs" />
+    <Compile Remove="Migrations\20240307183928_s6_Mig.cs" />
+    <Compile Remove="Migrations\20240307183928_s6_Mig.Designer.cs" />
+    <Compile Remove="Migrations\20240307190145_s6_Mig.cs" />
+    <Compile Remove="Migrations\20240307190145_s6_Mig.Designer.cs" />
+    <Compile Remove="Migrations\20240307190232_s6_Mig.cs" />
+    <Compile Remove="Migrations\20240307190232_s6_Mig.Designer.cs" />
+    <Compile Remove="Migrations\20240307190410_s6_Mig.cs" />
+    <Compile Remove="Migrations\20240307190410_s6_Mig.Designer.cs" />
+    <Compile Remove="Migrations\20240307190514_s6_Mig.cs" />
+    <Compile Remove="Migrations\20240307190514_s6_Mig.Designer.cs" />
+    <Compile Remove="Migrations\20240307190645_s7_Mig.cs" />
+    <Compile Remove="Migrations\20240307190645_s7_Mig.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
+    <PackageReference Include="ZarinPalSandbox" Version="2.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Html\" />
+  </ItemGroup>
+
+</Project>

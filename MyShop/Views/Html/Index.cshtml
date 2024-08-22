@@ -1,0 +1,364 @@
+﻿@using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage
+@model Html_login
+
+
+<title>قالب سایت خودم</title>
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = null;
+}
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+
+
+
+
+
+
+    <link href="~/Html/RTLbootstrap/css/bootstrap-rtl.css" rel="stylesheet">
+    <script src="~/Html/RTLbootstrap/Scripts/jquery-1.10.2.min.js"></script>
+
+    <script src="~/Html/RTLbootstrap/Scripts/bootstrap-rtl.js"></script>
+
+    <!-- اول باید کتاب خونه جی کوعری لینک شود  -->
+    <!-- چهار ساعت درگیر نبود این جی کوعری بودم مهم  -->
+    <!-- برای اجرای کد های جاوا اسکریپت به جی کوعری نیاز -->
+
+
+    <link href="~/Html/style.css" rel="stylesheet">
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+    <nav class="navbar navbar-inverse">
+
+        <a class="navbar-brand" href="#" style="font-size: 40px;">soheil0910</a>
+
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="">خانه</a> </li>
+            <li><a asp-controller="Home" asp-action="ContactUs">درباره ما</a></li>
+            <li>
+
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false" aria-haspopup="true">گروه های خبری <span class="caret"></span></a>
+                <partial name="_Html_Groups " />
+
+
+
+
+            </li>
+        </ul>
+
+
+        <form class="navbar-form navbar-left">
+
+            <div class="form-group">
+                <input class="form-control" type="text" placeholder="جستجو" disabled="disabled">
+            </div>
+            <button class="btn btn-default" type="submit" disabled="disabled">
+                <i class="
+        glyphicon glyphicon-search"></i>
+            </button>
+        </form>
+
+
+        
+        
+        
+       
+        @if (User.Identity.IsAuthenticated)
+        {
+
+            <button style="cursor: not-allowed;" class="btn btn-success btn-lg navbar-left" asp-area="">@User.Identity.Name خوش امدید</button>
+
+
+            <a class="btn btn-danger btn-lg navbar-left" asp-area="" asp-controller="Html" asp-action="Logout">خروج</a>
+         
+        }
+        else
+        {
+                            
+            <!-- دکمه لاگین -->
+            <button class="btn btn-primary btn-lg navbar-left" data-target="#myModal" data-toggle="modal" type="button">
+                ورود
+            </button>
+
+
+            <!-- <a href="" class="navbar-left" style="font-size: 2vw;" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-user" >  </i>ورود</a> -->
+            <!-- دکمه لاگین داخل ولی خود فقورم بیرون تگ  -->
+
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+    </nav>
+
+
+
+    
+
+
+<!-- کد های مخصوص به فورم لاگین پاپ اپ  -->
+<!-- Modal -->
+
+
+
+
+
+
+
+
+
+
+
+<div class="modal fade" id="myModal" role="dialog" aria-labelledby="myModalLabel" style="overflow: hidden;" tabindex="-1">
+
+    <!-- تگ لاگین  -->
+
+
+    <div class="Formmz1">
+        <form class="ttss1" asp-action="Index">
+            <div>
+
+                <button class="close" id="buttclos1" data-dismiss="modal" type="button" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button><br>
+            </div>
+
+            <h4 class="Th4MF"><span style="color: #397de8;"> Login </span>Your Account</h4>
+
+
+
+
+            <input asp-for="Email" placeholder="Your email" required/>
+
+            <input asp-for="Password" placeholder="Password" required/>
+
+
+            <input type="submit" value="Login">
+            <a class="a1 Ta11"></a>
+            <a class="a2 Ta11" asp-controller="Account" asp-action="Register">Create Account</a>
+        </form>
+    </div>
+    <!-- تا این جا -->
+</div>
+
+
+    <!--خطای پاپ اپ -->
+   @*  Model.StagingCount == 0 *@
+    @{
+
+        if (ViewBag.soa == 135)
+        {
+            <script>
+        function myFunction() {
+                    alert("اطلاعات صحیح نیست");
+        }
+        window.onload = myFunction();
+    </script>
+        }
+    }
+    
+
+    
+
+   
+
+    <!--خطای پاپ اپ -->
+    
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+    <div class="row container">
+        <main class="col-lg-8 col-xs-12 pull-left">
+
+            <!-- بنر سایت اسلاد شو  -->
+            <div class="carousel slide" id="carousel-example-generic" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li class="active" data-slide-to="0" data-target="#carousel-example-generic"></li>
+                    <li data-slide-to="1" data-target="#carousel-example-generic"></li>
+                    <li data-slide-to="2" data-target="#carousel-example-generic"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div style="border-radius: 5px;" class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="~/Html/img1/DOSH2.png" alt="dome" width="100%">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="~/Html/img1/DOSH1.jpg" alt="dome" width="100%">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="~/Html/img1/DOSH3.jpg" alt="dome" width="100%">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- مطالب سایت بعد از بنر  -->
+
+
+            <div class="row" style="margin-top: 10px;">
+
+
+
+
+
+
+
+
+
+
+
+                @foreach (var item in Model.products)
+                {
+                    <partial name="_Html_BoxProduct" model="item" />
+                }
+
+            </div>
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </main>
+        <aside class="col-lg-4 col-xs-12 pull-right">
+
+            <div class="list-group">
+                <a class="list-group-item active" href="#">
+                    گروه های خبری
+                </a>
+
+                <partial name="_Html_Groups_2" />
+
+
+            </div>
+            <!-- دیتای بعدی -->
+
+
+
+            <div class="list-group">
+                <a class="list-group-item " href="#">
+                    <h4 class="list-group-item-heading">این سایت تستی خودم نوشتم لورم فارسی نداشتم</h4>
+                    <p class="list-group-item-text">ولی خوب کیبورد که داشتم</p>
+                </a>
+
+                <a class="list-group-item " href="#">
+                    <h4 class="list-group-item-heading">مطالب سایت</h4>
+                    <p class="list-group-item-text">بهم ریخته</p>
+                </a>
+
+                <a class="list-group-item " href="#">
+                    <h4 class="list-group-item-heading">چرا این مطالب ؟</h4>
+                    <p class="list-group-item-text">حتما میتونم که مینویسم</p>
+                </a>
+
+                <a class="list-group-item " href="#">
+                  
+                    <h4 style="color:blueviolet" class="list-group-item-heading">@DateTime.Now.ToString("dddd")</h4>
+                    <p class="list-group-item-text">@DateTime.Now</p>
+                </a>
+
+            </div>
+
+
+
+        </aside>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

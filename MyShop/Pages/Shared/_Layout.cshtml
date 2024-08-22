@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <link href="~/lib/bootstrap4/css/bootstrap-rtl.min.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/css/admin.css" rel="stylesheet" />
+</head>
+<body dir="rtl">
+<header>
+        <a href="/admin/">Admin</a>
+</header>
+<div class="container1so">
+    <nav>
+        <ul>
+            <li>
+                <a class="nav-item" href="/">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a class="nav-item" href="/admin/add/">
+                    Add Product
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        @RenderBody()
+    </main>
+</div>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

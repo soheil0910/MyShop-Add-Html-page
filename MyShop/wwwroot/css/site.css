@@ -1,0 +1,155 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+a.nodcor:hover{
+    
+   text-decoration:none;
+   
+}
+/*-----------------------------------------------------------*/
+
+
+li:hover,.navbar-brand:hover{
+    
+  background-color: #009fe1;
+  color: #ffffff;
+ 
+  border-radius: 5px;
+}
+/*-----------------------------------------------------------*/
+
+
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  font-family: Sahel, sans-serif;
+  /*font-family:IranNastaliq,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+  /* font-family:Niconne,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+@font-face {
+  font-family: Sahel;
+  src: url("../font/Sahel/Sahel.eot");
+  src: url("../font/Sahel/Sahel_2.eot?#iefix") format("embedded-opentype"),
+    url("../font/Sahel/Sahel.woff") format("woff"),
+    url("../font/Sahel/Sahel.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Sahel;
+  src: url("../font/Sahel/Sahel-Bold.eot");
+  src: url("../font/Sahel/Sahel-Bold_2.eot?#iefix") format("embedded-opentype"),
+    url("../font/Sahel/Sahel-Bold.woff") format("woff"),
+    url("../font/Sahel/Sahel-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Sahel;
+  src: url("../font/Sahel/Sahel-Black.eot");
+  src: url("../font/Sahel/Sahel-Black_2.eot?#iefix") format("embedded-opentype"),
+    url("../font/Sahel/Sahel-Black.woff") format("woff"),
+    url("../font/Sahel/Sahel-Black.ttf") format("truetype");
+  font-weight: 900;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+  font-family: "Niconne";
+  src: local("Niconne Regular"), local("Niconne-Regular"),
+    url("../font/niconne-regular/Niconne-Regular.woff2") format("woff2"),
+    url("../font/niconne-regular/Niconne-Regular.woff") format("woff"),
+    url("../font/niconne-regular/niconne-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IranNastaliq";
+  src: local("Niconne Regular"), local("Niconne-Regular"),
+    url("../font/irannastaliq/IranNastaliq.woff") format("woff"),
+    url("../font/irannastaliq/irannastaliq.ttf") format("ttf"),
+    url("../font/irannastaliq/irannastaliq.eot") format("eot");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}

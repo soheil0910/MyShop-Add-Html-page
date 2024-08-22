@@ -1,0 +1,56 @@
+﻿@model Order
+@{
+    ViewData["Title"] = "ShowCart";
+}
+@if (Model != null)
+{
+
+
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>کالا</th>
+                <th>تعداد</th>
+                <th>قیمت</th>
+                <th></th>
+
+            </tr>
+        </thead>
+
+
+        @foreach (var item in Model.OrderDetails)
+        {
+
+            <tr>
+
+
+
+
+
+                <td>@item.Product.Name</td>
+                <td>@item.Count</td>
+
+                <td>@(item.Price*item.Count)</td>
+                <td>
+                    <a asp-action="RemoveCart" asp-route-Id="@item.DetailId">حذف</a>
+                </td>
+
+
+
+            </tr>
+
+        }
+
+
+
+    </table>
+
+    <h5>جمع کل: @Model.OrderDetails.Sum(a=>a.Price * a.Count)</h5>
+
+    <a class="btn btn-success" asp-action="Pyment">پرداخت</a>
+
+}
+else
+{
+    <div class="alert alert-danger"> فاکتور موجود نیست</div>
+}

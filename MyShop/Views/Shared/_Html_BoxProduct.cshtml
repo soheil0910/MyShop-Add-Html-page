@@ -1,0 +1,54 @@
+﻿@model Product
+
+
+
+
+
+
+
+@* <div class="row" style="margin-top: 10px;"> *@
+<div class="col-xs-12 col-sm-6 so_postxx1">
+    <div class="thumbnail">
+      
+            <img style="height: 240px;width: 100%;" src="/Images/@(Model.Id).png" alt="...">
+            <div class="caption">
+                <h3>@Model.Name</h3>
+                <p>
+                    @{
+                        var x = Model.Description.Take(250);
+                        string ExquiData = "";
+                        foreach (var zz in x)
+                        {
+                            ExquiData += zz;
+                        }
+                    }
+                    @ExquiData
+                </p>
+                <p>
+                <p style="color:gray">قیمت: @Model.Item.Price</p>
+                <a class="btn btn-default" asp-action="Description" asp-controller="Home" asp-route-Id="@Model.Id" role="button">جزئیات</a>
+                </p>
+
+      
+    </div>
+</div>
+</div>
+@* </div> *@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

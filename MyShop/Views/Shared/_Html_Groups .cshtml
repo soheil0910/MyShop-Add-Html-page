@@ -1,0 +1,27 @@
+﻿@using MyShop.Data.Repositories
+@inject IGroupRepository _group
+
+
+
+
+
+
+
+
+
+
+
+<ul class="dropdown-menu">
+    
+    @foreach (var item in _group.GetAllCategories())
+    {
+        <li> <a class="dropdown-item" href="/Group/@item.Id/@item.Name">@item.Name</a></li>
+
+    }
+</ul>
+
+
+
+
+
+

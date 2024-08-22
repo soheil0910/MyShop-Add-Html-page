@@ -1,0 +1,73 @@
+﻿
+
+
+
+<head>
+  
+    <link rel="stylesheet" href="~/PopUpLogin/style.css">
+
+    
+
+
+
+</head>
+<body>
+    <!-- کد های پاپ اپ شدن و حرکت  -->
+    <div id="alert" class="mwsModal">
+        <div class="mwsModal-content">
+
+
+            <!-- کد های فورم  -->
+            <div class="Formm">
+                <form class="Frmloginr" action="">
+                    <div>
+
+                        <button id="buttclosx1" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button><br>
+                    </div>
+                   <br>
+                    <br>
+                    <br>
+
+                    <p class="pforlogin">این سایت چون تستی و برای رزومه ام هست داری دو صفحه اصلی که یکی قالب </p>
+                    <p class="pforlogin">Core</p>
+                    <p class="pforlogin">دیگری هم با </p>
+                    <p class="pforlogin">Html & Css</p>
+
+                    <p class="pforlogin">انتخاب کنید کدام صفحه را میخواهید ببینید</p>
+                    <p class="pforlogin text-dark">توضیحات بیشتر در <a style="color:red;" href="/Group/1/soheil0910">دو محصول اول</a></p>
+                    <a class="btn btn-primary btn-lg navbar-left aforlogin" asp-controller="admin" >Admin Pages</a>
+
+                    <button type="button" class="close1" data-dismiss="modal" aria-label="Close1">
+                    <a class="btn btn-primary btn-lg navbar-left aforlogin" aria-label="Close">Core</a>
+                    </button>
+
+                    <a style="margin-bottom: 10px;" class="btn btn-primary btn-lg navbar-left aforlogin" asp-controller="Html" asp-action="Index">Html  <span class="sp">&</span> Css <span class="sp">&</span> Bootstrap</a>
+                 
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- کد های پاپ اپ شدن  -->
+    <script>
+        var alertModal = document.getElementById("alert");
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+        var span1 = document.getElementsByClassName("close1")[0];
+
+        span.onclick = function () {
+            alertModal.style.display = "none";
+        };
+
+        span1.onclick = function () {
+            alertModal.style.display = "none";
+        };
+
+        window.onclick = function (event) {
+            if (event.target == alertModal) {
+                alertModal.style.display = "none";
+            }
+        };
+    </script>
+</body>

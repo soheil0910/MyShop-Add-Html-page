@@ -1,0 +1,20 @@
+﻿@model Product
+
+
+
+
+<div class="col-md-6 col-lg-4 col-sm-10 col-12 py-2">
+    <div class="card">
+        <a class="nodcor" asp-action="Description" asp-controller="Home" asp-route-Id="@Model.Id">
+
+
+            <img src="/Images/@(Model.Id).png" width="160" class="card-img-top img-thumbnail" style="height:170px!important ;border: none;" />
+
+            <h5 class="card-title">@Model.Name</h5>
+
+
+            <p style="color:gray">قیمت: @Model.Item.Price</p>
+        </a>
+
+    </div>
+</div>

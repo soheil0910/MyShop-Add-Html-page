@@ -1,0 +1,20 @@
+﻿@model IEnumerable<Product>
+
+@{
+    ViewData["Title"] = "فروشگاه من";
+}
+
+<div class="text-center">
+
+  
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <partial name="_BoxProduct" model="item" />
+  
+        }
+    </div>
+  @*   <h1 style="color:blueviolet">@DateTime.Now</h1>
+    <h1 style="color:blueviolet">@DateTime.Now.ToString("dddd")</h1> *@
+</div>
+<partial name="_Html_PopUp_Login"  />

@@ -1,0 +1,26 @@
+﻿@using MyShop.Data.Repositories
+@inject IGroupRepository _group
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    @foreach (var item in _group.GetAllCategories())
+    {
+
+        <a class="list-group-item" href="/Group/@item.Id/@item.Name">@item.Name</a>
+    }
+
+
+
+
+
+

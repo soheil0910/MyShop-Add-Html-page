@@ -1,0 +1,66 @@
+﻿@page
+@model MyShop.Pages.Admin.EditModel
+@{
+    ViewData["Title"] = "ویرایش";
+}
+
+
+<h1>ویرایش</h1>
+
+
+
+
+<form method="post" enctype="multipart/form-data">
+
+    <label asp-for="ProductPage.Name"></label>
+    <input asp-for="ProductPage.Name" class="form-control" />
+    <span asp-validation-for="ProductPage.Name"></span>
+
+    <label asp-for="ProductPage.Description"></label>
+    <textarea asp-for="ProductPage.Description" class="form-control"></textarea>
+    <span asp-validation-for="ProductPage.Description"></span>
+
+    <label asp-for="ProductPage.Price"></label>
+    <input asp-for="ProductPage.Price" class="form-control" />
+    <span asp-validation-for="ProductPage.Price"></span>
+
+    <label asp-for="ProductPage.QuantityInStock"></label>
+    <input asp-for="ProductPage.QuantityInStock" class="form-control" />
+    <span asp-validation-for="ProductPage.QuantityInStock"></span>
+    <br />
+    <div style="border:solid 1px ;display: inline-block; ">
+
+    <label asp-for="ProductPage.Picture"></label>
+    <input asp-for="ProductPage.Picture" />
+    <img src="/Images/@(Model.ProductPage.Id).png" style="max-width:400px; max-height:400px" />
+    
+   <input type="hidden" asp-for="ProductPage.Id"/>
+    </div>
+
+    <br />
+    <br />
+    <h2>گروه ها </h2>
+
+    <div style="border:solid 1px ;display: inline-block;padding: 20px;">
+
+        @{
+            foreach (var item in Model.ProductPage.Category)
+            {
+                <label for="@item.Name">@item.Name</label>
+
+                <input type="checkbox" id="@item.Name" name="GroupSelect" value="@item.Id"
+                @((Model.GroupSelect.Any(x => x == item.Id) ? "checked" : "")) />
+
+                <br />
+            }
+        }
+    </div>
+
+    <br />
+    <br />
+
+
+    <input type="submit" value="ذخیره" class="btn btn-success" />
+
+
+</form>

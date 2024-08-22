@@ -1,0 +1,39 @@
+﻿@using Microsoft.EntityFrameworkCore
+@using MyShop.Data
+@using System.Security.Claims
+@inject MyShopContext _myShopContext;
+
+
+@{
+
+    if (User.FindFirstValue(ClaimTypes.NameIdentifier) != null)
+    {
+
+        int UserId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
+
+        var order = _myShopContext.Orders.Include(c => c.OrderDetails)
+                .FirstOrDefault(c => c.UserId == UserId && !c.IsFinaly);
+
+
+        if (order != null)
+        {
+
+
+
+            if (order.OrderDetails != null)
+            {
+                if (order.OrderDetails.Count != 0)
+                {
+
+
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" asp-controller="Home" asp-action="ShowCart">سبد خرید </a>
+                    </li>
+                }
+
+            }
+        }
+    }
+
+}
+

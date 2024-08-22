@@ -1,0 +1,49 @@
+﻿@page
+@model MyShop.Pages.Admin.IndexModel
+@{
+    ViewData["Title"] = "Admin";
+}
+<h1 style="display:inline-block;">لیست کالا ها</h1>
+<a asp-page="add">
+    <button class="button-49"  role="button">افزودن کالا</button>
+</a>
+
+<hr />
+
+
+<table id="customers">
+    <tr>
+    <th>نام</th>
+    <th>تصویر</th>
+    <th>قیمت</th>
+    <th>دستورات</th>
+   
+    </tr>
+ 
+    @foreach (var items in Model.product)
+{
+
+    <tr>
+            <td>@items.Name</td>
+            <td>
+                <img src="/Images/@(items.Id).png"  style="max-width:200px; max-height:200px"/>
+            </td>
+            <td>@items.Item.Price</td>
+            <td>
+                <a asp-page="Edit" asp-route-Id="@items.Id">ویرایش </a><br/>
+                <a asp-page="Delete" asp-route-Id="@items.Id">حذف</a>
+            </td>
+       
+    </tr>
+
+
+}
+
+
+
+
+
+</table>
+
+
+
