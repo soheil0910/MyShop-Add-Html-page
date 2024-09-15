@@ -2,6 +2,10 @@
 
 به درگاه پرداخت تستی متصل است
 
+.Net Core 8
+
+EF Core , Sql Server (Code First)
+
 Admin Page :Razor pages
 
 Identity
@@ -10,11 +14,6 @@ MVC
 
 Partial View
 
-EF Core , Sql Server (Code First)
-
-
-
-.Net Core 3.1 Up To .Net Core 8
 
 
 نمای برنامه 
