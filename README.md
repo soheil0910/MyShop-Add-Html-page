@@ -16,8 +16,12 @@ Partial View
 
 
 
-نمای برنامه 
+نمای برنامه  دارای دو قالب فرانت میباشد 
 
 
-![Uploading Screenshot (27).png…]()
+
+
+![asasdnet](https://github.com/user-attachments/assets/7b743627-1bce-415d-9005-3d90c9f90c48)
+
+
 ![Screenshot (28)](https://github.com/user-attachments/assets/cc242d67-466a-4d3a-8618-1665076d4db3)
