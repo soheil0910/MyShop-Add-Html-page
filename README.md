@@ -20,6 +20,3 @@ Partial View
 
 ![Uploading Screenshot (27).png…]()
 
-
-
-![Uploading Screenshot (28).png…]()
