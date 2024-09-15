@@ -18,5 +18,4 @@ Partial View
 
 نمای برنامه 
 
-![Uploading Screenshot (27).png…]()
-
+![Screenshot (28)](https://github.com/user-attachments/assets/cc242d67-466a-4d3a-8618-1665076d4db3)
